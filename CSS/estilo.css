@@ -1,201 +1,3 @@
-/*.order{
-       margin-bottom: 20px;
-       margin-left: 12px;
-       justify-content: center;
-   }
-   .demo{
-       margin-bottom: 20px;
-       margin-right: 12px;
-   }
-   .tax{
-       font-size: 13px;
-   }
-
-    div.promo_shop{
-       margin-top: 350px;
-       display: block ;
-       flex-wrap: wrap;
-   }
-
-   .demo{
-       margin-bottom: 20px;
-       margin-right: 12px;
-       padding:8px 80px 8px 80px;
-   }
-   .titulo_productos{
-       margin-top: 150px;
-       margin-bottom: 90px;
-   }
-
-   .info1_promo{
-       font-size: 25px;
-
-   }
-   .info2_promo{
-       font-size: 15px;
-
-   }
-   .Productos{
-       margin-top: 80px;
-       margin-left: 30px;
-       font-size: 35px;
-       font-weight: 500;
-   }
-
-
-}
-*/
-/*
-     div.botones{
-        margin-top: 480px;
-        display: block ;
-        flex-wrap: wrap;
-
-    }
-    .order{
-        margin-bottom: 20px;
-        margin-left: 12px;
-        justify-content: center;
-    }
-    .demo{
-        margin-bottom: 20px;
-        margin-right: 12px;
-    }
-    .tax{
-        font-size: 13px;
-    }
-
-     div.promo_shop{
-        margin-top: 200px;
-        display: block ;
-        flex-wrap: wrap;
-    }
-
-    .demo{
-        margin-bottom: 20px;
-        margin-right: 12px;
-        padding:8px 80px 8px 80px;
-    }
-    .titulo_productos{
-        margin-top: 200px;
-        margin-bottom: 90px;
-    }
-
-    .info1_promo{
-        font-size: 25px;
-
-    }
-    .info2_promo{
-        font-size: 15px;
-
-    }
-    .Productos{
-        margin-top: 80px;
-        margin-left: 30px;
-        font-size: 35px;
-        font-weight: 500;
-    }
-
-
-}*/
-@media all and (min-width: 375px) and (max-width: 500px) {
-  div.promo_shop {
-    margin-top: 300px;
-    display: block;
-    flex-wrap: wrap;
-  }
-  .demo {
-    margin-bottom: 20px;
-    margin-right: 12px;
-    padding: 8px 80px 8px 80px;
-  }
-  div.promo_shop {
-    margin-top: 30px;
-    display: block;
-    flex-wrap: wrap;
-  }
-  .info1_promo {
-    font-size: 20px;
-  }
-  .info2_promo {
-    font-size: 15px;
-  }
-  .titulo_productos {
-    margin-top: 80px;
-    margin-bottom: 90px;
-  }
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 5px;
-    font-size: 15px;
-    font-weight: 500;
-  }
-  p.accesorios-info1, .accesorios-info2, .accesorios-info3 {
-    font-size: 15px;
-  }
-  .accesorios-descripcion1, .accesorios-descripcion2, .accesorios-descripcion3 {
-    top: 50%;
-  }
-  p.accesorios-info1, .accesorios-info2, .accesorios-info3 {
-    margin-bottom: -20px;
-  }
-  a.boton-shop {
-    margin-bottom: 20px;
-    margin-right: 12px;
-    font-size: 12px;
-    padding: 3px 10px 3px 10px;
-  }
-}
-@media all and (max-width: 368px) {
-  div.promo_shop {
-    margin-top: 300px;
-    display: block;
-    flex-wrap: wrap;
-  }
-  .demo {
-    margin-bottom: 20px;
-    margin-right: 12px;
-    padding: 8px 80px 8px 80px;
-  }
-  div.promo_shop {
-    margin-top: 30px;
-    display: block;
-    flex-wrap: wrap;
-  }
-  .info1_promo {
-    font-size: 12px;
-  }
-  .info2_promo {
-    font-size: 7px;
-  }
-  .titulo_productos {
-    margin-top: 80px;
-    margin-bottom: 90px;
-  }
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 5px;
-    font-size: 15px;
-    font-weight: 500;
-  }
-  p.accesorios-info1, .accesorios-info2, .accesorios-info3 {
-    font-size: 15px;
-  }
-  .accesorios-descripcion1, .accesorios-descripcion2, .accesorios-descripcion3 {
-    top: 50%;
-  }
-  p.accesorios-info1, .accesorios-info2, .accesorios-info3 {
-    margin-bottom: -20px;
-  }
-  a.boton-shop {
-    margin-bottom: 20px;
-    margin-right: 12px;
-    font-size: 9px;
-    padding: 2px 8px 2px 8px;
-  }
-}
 * {
   margin-top: -5.5px;
   padding: 0;
@@ -222,6 +24,8 @@ header video {
 header .video-panel {
   width: 100%;
   height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 header .promo {
   position: relative;
@@ -255,6 +59,41 @@ header .promo section.info div.content p.precio {
 header .promo .botones-panel {
   margin-top: 40rem;
 }
+@media screen and (max-width: 1400px) {
+  header .promo .botones-panel {
+    margin-top: 200px;
+    display: block;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1200px) {
+  header .promo .botones-panel {
+    margin-top: 480px;
+    display: block;
+    flex-wrap: wrap;
+  }
+}
+@media all and (min-width: 480px) and (max-width: 812px) {
+  header .promo .botones-panel {
+    margin-top: 420px;
+    display: block;
+    flex-wrap: wrap;
+  }
+}
+@media all and (min-width: 375px) and (max-width: 500px) {
+  header .promo .botones-panel {
+    margin-top: 150px;
+    display: block;
+    flex-wrap: wrap;
+  }
+}
+@media all and (max-width: 480px) {
+  header .promo .botones-panel {
+    margin-top: 100px;
+    display: block;
+    flex-wrap: wrap;
+  }
+}
 header .promo .botones-panel .order {
   color: white;
   font-weight: 500;
@@ -265,7 +104,29 @@ header .promo .botones-panel .order {
   border-radius: 5px;
   margin-right: 12px;
 }
-header .promo .botones-panel .demo {
+@media screen and (max-width: 1400px) {
+  header .promo .botones-panel .order {
+    margin-bottom: 20px;
+    margin-left: 12px;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1200px) {
+  header .promo .botones-panel .order {
+    margin-bottom: 20px;
+    margin-left: 12px;
+    justify-content: center;
+  }
+}
+@media all and (min-width: 480px) and (max-width: 812px) {
+  header .promo .botones-panel .order {
+    margin-bottom: 20px;
+    margin-left: 12px;
+    justify-content: center;
+    padding: 8px 80px 8px 80px;
+  }
+}
+header .promo .demo {
   color: black;
   font-weight: 500;
   padding: 8px 90px 8px 90px;
@@ -273,7 +134,37 @@ header .promo .botones-panel .demo {
   border-radius: 5px;
   margin-left: 12px;
 }
-header .promo .botones-panel .consulta {
+@media screen and (max-width: 1400px) {
+  header .promo .demo {
+    margin-bottom: 20px;
+    margin-right: 12px;
+    padding: 8px 80px 8px 80px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  header .promo .demo {
+    margin-bottom: 20px;
+    margin-right: 12px;
+  }
+}
+@media all and (min-width: 480px) and (max-width: 812px) {
+  header .promo .demo {
+    margin-bottom: 20px;
+    margin-right: 12px;
+    padding: 8px 80px 8px 80px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  header .promo .tax {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  header .promo .tax {
+    font-size: 13px;
+  }
+}
+header .promo .consulta {
   margin-left: 20px;
   color: white;
   font-weight: 500;
@@ -282,11 +173,12 @@ header .promo .botones-panel .consulta {
   border-style: solid;
   border-color: white;
 }
-header .promo a:hover {
+header a:hover {
   transform: scale(1.2);
   transition: transform 0.3s ease;
 }
-header .charging {
+
+.charging {
   width: 100%;
   height: 100%;
 }
@@ -305,16 +197,16 @@ main .content .precio {
   font-size: 19px;
 }
 main .botones {
-  margin-top: 40rem;
+  margin-top: 30rem;
 }
-@media all and (max-width: 1400px) {
+@media screen and (max-width: 1400px) {
   main .botones {
-    margin-top: 480px;
+    margin-top: 200px;
     display: block;
     flex-wrap: wrap;
   }
 }
-@media all and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   main .botones {
     margin-top: 480px;
     display: block;
@@ -327,59 +219,19 @@ main .botones {
     display: block;
     flex-wrap: wrap;
   }
-  main .botones div.botones {
-    margin-top: 420px;
+}
+@media all and (min-width: 375px) and (max-width: 500px) {
+  main .botones {
+    margin-top: 150px;
     display: block;
     flex-wrap: wrap;
   }
-  main .botones .order {
-    margin-bottom: 20px;
-    margin-left: 12px;
-    justify-content: center;
-    padding: 8px 80px 8px 80px;
-  }
-  main .botones .demo {
-    margin-bottom: 20px;
-    margin-right: 12px;
-    padding: 8px 80px 8px 80px;
-  }
-  main .botones .tax {
-    font-size: 13px;
-  }
-  main .botones div.promo_shop {
-    margin-top: 80px;
+}
+@media all and (max-width: 480px) {
+  main .botones {
+    margin-top: 100px;
     display: block;
     flex-wrap: wrap;
-    font-size: 8px;
-  }
-  main .botones .demo {
-    margin-bottom: 20px;
-    margin-right: 12px;
-    padding: 8px 80px 8px 80px;
-  }
-  main .botones .info1_promo {
-    font-size: 20px;
-  }
-  main .botones .info2_promo {
-    font-size: 15px;
-  }
-  main .botones .promo_shop {
-    margin-top: 10px;
-  }
-  main .botones p.accesorios-info1, main .botones .accesorios-info2, main .botones .accesorios-info3 {
-    font-size: 25px;
-  }
-  main .botones .accesorios-descripcion1, main .botones .accesorios-descripcion2, main .botones .accesorios-descripcion3 {
-    top: 70%;
-  }
-  main .botones p.accesorios-info1, main .botones .accesorios-info2, main .botones .accesorios-info3 {
-    margin-bottom: -10px;
-  }
-  main .botones a.boton-shop {
-    margin-bottom: 20px;
-    margin-right: 12px;
-    font-size: 12px;
-    padding: 3px 20px 3px 20px;
   }
 }
 main .botones .order {
@@ -392,10 +244,21 @@ main .botones .order {
   border-radius: 5px;
   margin-right: 12px;
 }
-@media all and (max-width: 1400px) {
+@media screen and (max-width: 1400px) {
   main .botones .order {
     margin-bottom: 20px;
     margin-left: 12px;
+    display: block;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1200px) {
+  main .botones .order {
+    margin-bottom: 20px;
+    margin-left: 12px;
+    display: block;
+    flex-wrap: wrap;
     justify-content: center;
   }
 }
@@ -404,61 +267,29 @@ main .botones .order {
     margin-bottom: 20px;
     margin-left: 12px;
     justify-content: center;
-    padding: 8px 80px 8px 80px;
-  }
-  main .botones .order div.botones {
-    margin-top: 420px;
     display: block;
     flex-wrap: wrap;
+    padding: 3px 20px 3px 20px;
   }
-  main .botones .order .order {
-    margin-bottom: 20px;
-    margin-left: 12px;
-    justify-content: center;
-    padding: 8px 80px 8px 80px;
-  }
-  main .botones .order .demo {
-    margin-bottom: 20px;
-    margin-right: 12px;
-    padding: 8px 80px 8px 80px;
-  }
-  main .botones .order .tax {
-    font-size: 13px;
-  }
-  main .botones .order div.promo_shop {
-    margin-top: 80px;
-    display: block;
-    flex-wrap: wrap;
-    font-size: 8px;
-  }
-  main .botones .order .demo {
-    margin-bottom: 20px;
-    margin-right: 12px;
-    padding: 8px 80px 8px 80px;
-  }
-  main .botones .order .info1_promo {
-    font-size: 20px;
-  }
-  main .botones .order .info2_promo {
-    font-size: 15px;
-  }
-  main .botones .order .promo_shop {
-    margin-top: 10px;
-  }
-  main .botones .order p.accesorios-info1, main .botones .order .accesorios-info2, main .botones .order .accesorios-info3 {
-    font-size: 25px;
-  }
-  main .botones .order .accesorios-descripcion1, main .botones .order .accesorios-descripcion2, main .botones .order .accesorios-descripcion3 {
-    top: 70%;
-  }
-  main .botones .order p.accesorios-info1, main .botones .order .accesorios-info2, main .botones .order .accesorios-info3 {
-    margin-bottom: -10px;
-  }
-  main .botones .order a.boton-shop {
+}
+@media all and (min-width: 375px) and (max-width: 500px) {
+  main .botones .order {
     margin-bottom: 20px;
     margin-right: 12px;
     font-size: 12px;
-    padding: 3px 20px 3px 20px;
+    display: block;
+    flex-wrap: wrap;
+    padding: 3px 10px 3px 10px;
+  }
+}
+@media all and (max-width: 480px) {
+  main .botones .order {
+    margin-bottom: 20px;
+    margin-right: 12px;
+    font-size: 9px;
+    display: block;
+    flex-wrap: wrap;
+    padding: 2px 8px 2px 8px;
   }
 }
 main .botones .demo {
@@ -469,82 +300,76 @@ main .botones .demo {
   border-radius: 5px;
   margin-left: 12px;
 }
-@media all and (max-width: 1400px) {
+@media screen and (max-width: 1400px) {
   main .botones .demo {
     margin-bottom: 20px;
     margin-right: 12px;
     padding: 8px 80px 8px 80px;
   }
 }
-@media all and (min-width: 480px) and (max-width: 812px) {
+@media screen and (max-width: 1200px) {
   main .botones .demo {
-    margin-bottom: 20px;
-    margin-right: 12px;
-    padding: 8px 80px 8px 80px;
-  }
-  main .botones .demo div.botones {
-    margin-top: 420px;
-    display: block;
-    flex-wrap: wrap;
-  }
-  main .botones .demo .order {
     margin-bottom: 20px;
     margin-left: 12px;
     justify-content: center;
-    padding: 8px 80px 8px 80px;
-  }
-  main .botones .demo .demo {
-    margin-bottom: 20px;
-    margin-right: 12px;
-    padding: 8px 80px 8px 80px;
-  }
-  main .botones .demo .tax {
-    font-size: 13px;
-  }
-  main .botones .demo div.promo_shop {
-    margin-top: 80px;
-    display: block;
-    flex-wrap: wrap;
-    font-size: 8px;
-  }
-  main .botones .demo .demo {
-    margin-bottom: 20px;
-    margin-right: 12px;
-    padding: 8px 80px 8px 80px;
-  }
-  main .botones .demo .info1_promo {
-    font-size: 20px;
-  }
-  main .botones .demo .info2_promo {
-    font-size: 15px;
-  }
-  main .botones .demo .promo_shop {
-    margin-top: 10px;
-  }
-  main .botones .demo p.accesorios-info1, main .botones .demo .accesorios-info2, main .botones .demo .accesorios-info3 {
-    font-size: 25px;
-  }
-  main .botones .demo .accesorios-descripcion1, main .botones .demo .accesorios-descripcion2, main .botones .demo .accesorios-descripcion3 {
-    top: 70%;
-  }
-  main .botones .demo p.accesorios-info1, main .botones .demo .accesorios-info2, main .botones .demo .accesorios-info3 {
-    margin-bottom: -10px;
-  }
-  main .botones .demo a.boton-shop {
-    margin-bottom: 20px;
-    margin-right: 12px;
-    font-size: 12px;
-    padding: 3px 20px 3px 20px;
   }
 }
-@media all and (max-width: 1400px) {
-  main .botones .tax {
-    font-size: 13px;
+@media all and (min-width: 375px) and (max-width: 500px) {
+  main .botones .demo {
+    margin-bottom: 20px;
+    margin-right: 12px;
+    padding: 8px 80px 8px 80px;
   }
 }
 main .botones a:hover {
   transform: scale(1.2);
   transition: transform 0.3s ease;
+}
+main section.interior {
+  position: relative;
+  background-color: black;
+  z-index: -2;
+}
+main section.interior div.imagen_interior {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+  margin-top: 80px;
+}
+main section.interior div.imagen_interior .imagen_interior img {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+main section.interior div.imagen_interior h1 {
+  padding-top: 10px;
+  color: white;
+}
+main section.cinematic {
+  position: relative;
+  background-color: black;
+  z-index: -2;
+}
+main section.cinematic div.cinematica-descripcion {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+  padding-top: 60px;
+  color: white;
+}
+main section.cinematic div.cinematica-descripcion video {
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 50%;
+  height: auto;
+}
+main section.cinematic div.cinematica-descripcion p.description-cinematica {
+  width: 30%;
 }
 main img {
   position: relative;
@@ -558,20 +383,17 @@ main img {
   max-width: 100%;
   height: auto;
 }
-main .contenedor_promo {
-  margin-bottom: 102px;
+main .contenedor_promo .promo_shop {
+  margin-bottom: 8%;
 }
-@media all and (max-width: 1400px) {
-  main .contenedor_promo {
+@media screen and (max-width: 1400px) {
+  main .contenedor_promo .promo_shop {
     margin-top: 350px;
     display: block;
     flex-wrap: wrap;
   }
 }
-main .contenedor_promo .promo_shop {
-  margin-top: 650px;
-}
-@media all and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   main .contenedor_promo .promo_shop {
     margin-top: 200px;
     display: block;
@@ -580,64 +402,24 @@ main .contenedor_promo .promo_shop {
 }
 @media all and (min-width: 480px) and (max-width: 812px) {
   main .contenedor_promo .promo_shop {
-    margin-top: 80px;
+    margin-top: 5px;
     display: block;
     flex-wrap: wrap;
     font-size: 8px;
   }
-  main .contenedor_promo .promo_shop div.botones {
-    margin-top: 420px;
+}
+@media all and (min-width: 375px) and (max-width: 500px) {
+  main .contenedor_promo .promo_shop {
+    margin-top: 50px;
     display: block;
     flex-wrap: wrap;
   }
-  main .contenedor_promo .promo_shop .order {
-    margin-bottom: 20px;
-    margin-left: 12px;
-    justify-content: center;
-    padding: 8px 80px 8px 80px;
-  }
-  main .contenedor_promo .promo_shop .demo {
-    margin-bottom: 20px;
-    margin-right: 12px;
-    padding: 8px 80px 8px 80px;
-  }
-  main .contenedor_promo .promo_shop .tax {
-    font-size: 13px;
-  }
-  main .contenedor_promo .promo_shop div.promo_shop {
-    margin-top: 80px;
+}
+@media all and (max-width: 480px) {
+  main .contenedor_promo .promo_shop {
+    margin-top: 20px;
     display: block;
     flex-wrap: wrap;
-    font-size: 8px;
-  }
-  main .contenedor_promo .promo_shop .demo {
-    margin-bottom: 20px;
-    margin-right: 12px;
-    padding: 8px 80px 8px 80px;
-  }
-  main .contenedor_promo .promo_shop .info1_promo {
-    font-size: 20px;
-  }
-  main .contenedor_promo .promo_shop .info2_promo {
-    font-size: 15px;
-  }
-  main .contenedor_promo .promo_shop .promo_shop {
-    margin-top: 10px;
-  }
-  main .contenedor_promo .promo_shop p.accesorios-info1, main .contenedor_promo .promo_shop .accesorios-info2, main .contenedor_promo .promo_shop .accesorios-info3 {
-    font-size: 25px;
-  }
-  main .contenedor_promo .promo_shop .accesorios-descripcion1, main .contenedor_promo .promo_shop .accesorios-descripcion2, main .contenedor_promo .promo_shop .accesorios-descripcion3 {
-    top: 70%;
-  }
-  main .contenedor_promo .promo_shop p.accesorios-info1, main .contenedor_promo .promo_shop .accesorios-info2, main .contenedor_promo .promo_shop .accesorios-info3 {
-    margin-bottom: -10px;
-  }
-  main .contenedor_promo .promo_shop a.boton-shop {
-    margin-bottom: 20px;
-    margin-right: 12px;
-    font-size: 12px;
-    padding: 3px 20px 3px 20px;
   }
 }
 main .contenedor_promo .promo_shop .info_promo {
@@ -645,83 +427,36 @@ main .contenedor_promo .promo_shop .info_promo {
   font-weight: 500;
 }
 main .contenedor_promo .promo_shop .info1_promo {
-  margin-top: 600px;
+  margin-top: 28%;
 }
-@media all and (max-width: 1400px) {
+@media screen and (max-width: 1400px) {
   main .contenedor_promo .promo_shop .info1_promo {
     font-size: 25px;
-    margin-top: 80px;
-  }
-}
-@media all and (max-width: 1200px) {
-  main .contenedor_promo .promo_shop .info1_promo {
-    margin-top: 50px;
+    margin-top: 200px;
   }
 }
 @media all and (min-width: 480px) and (max-width: 812px) {
   main .contenedor_promo .promo_shop .info1_promo {
-    font-size: 20px;
-  }
-  main .contenedor_promo .promo_shop .info1_promo div.botones {
-    margin-top: 420px;
-    display: block;
-    flex-wrap: wrap;
-  }
-  main .contenedor_promo .promo_shop .info1_promo .order {
-    margin-bottom: 20px;
-    margin-left: 12px;
-    justify-content: center;
-    padding: 8px 80px 8px 80px;
-  }
-  main .contenedor_promo .promo_shop .info1_promo .demo {
-    margin-bottom: 20px;
-    margin-right: 12px;
-    padding: 8px 80px 8px 80px;
-  }
-  main .contenedor_promo .promo_shop .info1_promo .tax {
-    font-size: 13px;
-  }
-  main .contenedor_promo .promo_shop .info1_promo div.promo_shop {
     margin-top: 80px;
-    display: block;
-    flex-wrap: wrap;
-    font-size: 8px;
-  }
-  main .contenedor_promo .promo_shop .info1_promo .demo {
-    margin-bottom: 20px;
-    margin-right: 12px;
-    padding: 8px 80px 8px 80px;
-  }
-  main .contenedor_promo .promo_shop .info1_promo .info1_promo {
     font-size: 20px;
   }
-  main .contenedor_promo .promo_shop .info1_promo .info2_promo {
-    font-size: 15px;
+}
+@media all and (min-width: 375px) and (max-width: 500px) {
+  main .contenedor_promo .promo_shop .info1_promo {
+    font-size: 20px;
   }
-  main .contenedor_promo .promo_shop .info1_promo .promo_shop {
-    margin-top: 10px;
-  }
-  main .contenedor_promo .promo_shop .info1_promo p.accesorios-info1, main .contenedor_promo .promo_shop .info1_promo .accesorios-info2, main .contenedor_promo .promo_shop .info1_promo .accesorios-info3 {
-    font-size: 25px;
-  }
-  main .contenedor_promo .promo_shop .info1_promo .accesorios-descripcion1, main .contenedor_promo .promo_shop .info1_promo .accesorios-descripcion2, main .contenedor_promo .promo_shop .info1_promo .accesorios-descripcion3 {
-    top: 70%;
-  }
-  main .contenedor_promo .promo_shop .info1_promo p.accesorios-info1, main .contenedor_promo .promo_shop .info1_promo .accesorios-info2, main .contenedor_promo .promo_shop .info1_promo .accesorios-info3 {
-    margin-bottom: -10px;
-  }
-  main .contenedor_promo .promo_shop .info1_promo a.boton-shop {
-    margin-bottom: 20px;
-    margin-right: 12px;
+}
+@media all and (max-width: 480px) {
+  main .contenedor_promo .promo_shop .info1_promo {
     font-size: 12px;
-    padding: 3px 20px 3px 20px;
+    margin-top: 20px;
   }
 }
 main .contenedor_promo .promo_shop .info2_promo {
   font-size: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 2%;
 }
-@media all and (max-width: 1400px) {
+@media screen and (max-width: 1400px) {
   main .contenedor_promo .promo_shop .info2_promo {
     font-size: 15px;
   }
@@ -730,59 +465,10 @@ main .contenedor_promo .promo_shop .info2_promo {
   main .contenedor_promo .promo_shop .info2_promo {
     font-size: 15px;
   }
-  main .contenedor_promo .promo_shop .info2_promo div.botones {
-    margin-top: 420px;
-    display: block;
-    flex-wrap: wrap;
-  }
-  main .contenedor_promo .promo_shop .info2_promo .order {
-    margin-bottom: 20px;
-    margin-left: 12px;
-    justify-content: center;
-    padding: 8px 80px 8px 80px;
-  }
-  main .contenedor_promo .promo_shop .info2_promo .demo {
-    margin-bottom: 20px;
-    margin-right: 12px;
-    padding: 8px 80px 8px 80px;
-  }
-  main .contenedor_promo .promo_shop .info2_promo .tax {
-    font-size: 13px;
-  }
-  main .contenedor_promo .promo_shop .info2_promo div.promo_shop {
-    margin-top: 80px;
-    display: block;
-    flex-wrap: wrap;
-    font-size: 8px;
-  }
-  main .contenedor_promo .promo_shop .info2_promo .demo {
-    margin-bottom: 20px;
-    margin-right: 12px;
-    padding: 8px 80px 8px 80px;
-  }
-  main .contenedor_promo .promo_shop .info2_promo .info1_promo {
-    font-size: 20px;
-  }
-  main .contenedor_promo .promo_shop .info2_promo .info2_promo {
-    font-size: 15px;
-  }
-  main .contenedor_promo .promo_shop .info2_promo .promo_shop {
-    margin-top: 10px;
-  }
-  main .contenedor_promo .promo_shop .info2_promo p.accesorios-info1, main .contenedor_promo .promo_shop .info2_promo .accesorios-info2, main .contenedor_promo .promo_shop .info2_promo .accesorios-info3 {
-    font-size: 25px;
-  }
-  main .contenedor_promo .promo_shop .info2_promo .accesorios-descripcion1, main .contenedor_promo .promo_shop .info2_promo .accesorios-descripcion2, main .contenedor_promo .promo_shop .info2_promo .accesorios-descripcion3 {
-    top: 70%;
-  }
-  main .contenedor_promo .promo_shop .info2_promo p.accesorios-info1, main .contenedor_promo .promo_shop .info2_promo .accesorios-info2, main .contenedor_promo .promo_shop .info2_promo .accesorios-info3 {
-    margin-bottom: -10px;
-  }
-  main .contenedor_promo .promo_shop .info2_promo a.boton-shop {
-    margin-bottom: 20px;
-    margin-right: 12px;
+}
+@media all and (max-width: 480px) {
+  main .contenedor_promo .promo_shop .info2_promo {
     font-size: 12px;
-    padding: 3px 20px 3px 20px;
   }
 }
 main .boton_promo .boton-shop {
@@ -793,13 +479,29 @@ main .boton_promo .boton-shop {
   border-radius: 5px;
   margin-left: 12px;
 }
+@media screen and (max-width: 1020px) {
+  main .boton_promo .boton-shop {
+    margin-bottom: 20px;
+    margin-right: 12px;
+    font-size: 12px;
+    padding: 3px 20px 3px 20px;
+  }
+}
+@media all and (max-width: 480px) {
+  main .boton_promo .boton-shop {
+    margin-bottom: 20px;
+    margin-right: 12px;
+    font-size: 9px;
+    padding: 2px 8px 2px 8px;
+  }
+}
 main .contenedor_imagenes .Productos {
-  margin-top: 150px;
+  margin-top: 80px;
   margin-left: 30px;
   font-size: 35px;
   font-weight: 500;
 }
-@media all and (max-width: 1400px) {
+@media screen and (max-width: 1400px) {
   main .contenedor_imagenes .Productos {
     margin-top: 80px;
     margin-left: 30px;
@@ -810,15 +512,53 @@ main .contenedor_imagenes .Productos {
 main .contenedor_imagenes .Productos .titulo_productos {
   margin-bottom: 80px;
 }
-@media all and (max-width: 1400px) {
+@media screen and (max-width: 1400px) {
   main .contenedor_imagenes .Productos .titulo_productos {
     margin-top: 150px;
     margin-bottom: 90px;
   }
 }
-@media all and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   main .contenedor_imagenes .Productos .titulo_productos {
     margin-top: 200px;
+    margin-bottom: 90px;
+  }
+}
+@media all and (min-width: 375px) and (max-width: 500px) {
+  main .contenedor_imagenes .Productos .titulo_productos {
+    margin-top: 80px;
+    margin-bottom: 90px;
+  }
+}
+@media all and (max-width: 480px) {
+  main .contenedor_imagenes .Productos .titulo_productos {
+    margin-top: 80px;
+    margin-bottom: 90px;
+  }
+}
+main .contenedor_imagenes_charging {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+main .contenedor_imagenes_charging .Productos {
+  margin-top: 15%;
+  font-size: 35px;
+  font-weight: 500;
+}
+@media screen and (max-width: 1400px) {
+  main .contenedor_imagenes_charging .Productos {
+    margin-top: 80px;
+    margin-left: 30px;
+    font-size: 35px;
+    font-weight: 500;
+  }
+}
+main .contenedor_imagenes_charging .Productos .titulo_productos {
+  margin-bottom: 80px;
+}
+@media screen and (max-width: 1400px) {
+  main .contenedor_imagenes_charging .Productos .titulo_productos {
+    margin-top: 150px;
     margin-bottom: 90px;
   }
 }
@@ -830,12 +570,30 @@ main .grid-container {
   font-weight: 500;
   width: 100%;
 }
-@media (max-width: 1020px) {
+@media screen and (max-width: 1020px) {
   main .grid-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 5px;
     font-size: 20px;
+    font-weight: 500;
+  }
+}
+@media all and (min-width: 375px) and (max-width: 500px) {
+  main .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 5px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
+@media all and (max-width: 480px) {
+  main .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 5px;
+    font-size: 15px;
     font-weight: 500;
   }
 }
@@ -851,20 +609,75 @@ main .grid-container .grid-item img {
 main .grid-container .grid-item:hover {
   transform: scale(1.2);
 }
-main .contenedor_accesorios1 {
+main .contenedor-panel {
+  display: flex;
+  justify-content: space-between;
+}
+main .contenedor-panel .description-panel {
+  width: 30%;
+  margin: 8%;
+}
+main .contenedor-panel .video-panel {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main video {
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 1%;
+}
+main .titulo-descripcion {
+  font-weight: bold;
+}
+
+.contenedor_accesorios1 {
   position: relative;
   text-align: center;
   font-size: 35px;
   color: white;
   font-weight: 500;
 }
-main .contenedor_accesorios1 .accesorios-descripcion1 {
+.contenedor_accesorios1 .accesorios-descripcion1 {
   position: absolute;
   top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-main .contenedor_accesorios1 .accesorios-descripcion1 .boton-shop {
+@media screen and (max-width: 1020px) {
+  .contenedor_accesorios1 .accesorios-descripcion1 {
+    top: 70%;
+    margin-bottom: -10px;
+  }
+}
+@media all and (min-width: 375px) and (max-width: 500px) {
+  .contenedor_accesorios1 .accesorios-descripcion1 {
+    top: 50%;
+  }
+}
+@media all and (max-width: 480px) {
+  .contenedor_accesorios1 .accesorios-descripcion1 {
+    top: 50%;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .contenedor_accesorios1 .accesorios-descripcion1 .accesorios-info1 {
+    font-size: 25px;
+  }
+}
+@media all and (min-width: 375px) and (max-width: 500px) {
+  .contenedor_accesorios1 .accesorios-descripcion1 .accesorios-info1 {
+    font-size: 15px;
+    margin-bottom: -20px;
+  }
+}
+@media all and (max-width: 480px) {
+  .contenedor_accesorios1 .accesorios-descripcion1 .accesorios-info1 {
+    margin-bottom: -20px;
+  }
+}
+.contenedor_accesorios1 .accesorios-descripcion1 .boton-shop {
   font-size: 15px;
   color: black;
   font-weight: 500;
@@ -873,20 +686,77 @@ main .contenedor_accesorios1 .accesorios-descripcion1 .boton-shop {
   border-radius: 5px;
   margin-left: 12px;
 }
-main .contenedor_accesorios2 {
+@media screen and (max-width: 1020px) {
+  .contenedor_accesorios1 .accesorios-descripcion1 .boton-shop {
+    margin-bottom: 20px;
+    margin-right: 12px;
+    font-size: 12px;
+    padding: 3px 20px 3px 20px;
+  }
+}
+@media all and (min-width: 375px) and (max-width: 500px) {
+  .contenedor_accesorios1 .accesorios-descripcion1 .boton-shop {
+    margin-bottom: 20px;
+    margin-right: 12px;
+    font-size: 12px;
+    padding: 3px 10px 3px 10px;
+  }
+}
+@media all and (max-width: 480px) {
+  .contenedor_accesorios1 .accesorios-descripcion1 .boton-shop {
+    margin-bottom: 20px;
+    margin-right: 12px;
+    font-size: 9px;
+    padding: 2px 8px 2px 8px;
+  }
+}
+
+.contenedor_accesorios2 {
   position: relative;
   text-align: center;
   font-size: 35px;
   font-weight: 500;
   color: black;
 }
-main .contenedor_accesorios2 .accesorios-descripcion2 {
+.contenedor_accesorios2 .accesorios-descripcion2 {
   position: absolute;
   top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-main .contenedor_accesorios2 .accesorios-descripcion2 .boton-shop {
+@media screen and (max-width: 1020px) {
+  .contenedor_accesorios2 .accesorios-descripcion2 {
+    top: 70%;
+    margin-bottom: -10px;
+  }
+}
+@media all and (min-width: 375px) and (max-width: 500px) {
+  .contenedor_accesorios2 .accesorios-descripcion2 {
+    top: 50%;
+  }
+}
+@media all and (max-width: 480px) {
+  .contenedor_accesorios2 .accesorios-descripcion2 {
+    top: 50%;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .contenedor_accesorios2 .accesorios-descripcion2 .accesorios-info2 {
+    font-size: 25px;
+    margin-bottom: -20px;
+  }
+}
+@media all and (min-width: 375px) and (max-width: 500px) {
+  .contenedor_accesorios2 .accesorios-descripcion2 .accesorios-info2 {
+    font-size: 15px;
+  }
+}
+@media all and (max-width: 480px) {
+  .contenedor_accesorios2 .accesorios-descripcion2 .accesorios-info2 {
+    margin-bottom: -20px;
+  }
+}
+.contenedor_accesorios2 .accesorios-descripcion2 .boton-shop {
   font-size: 15px;
   color: black;
   font-weight: 500;
@@ -895,20 +765,84 @@ main .contenedor_accesorios2 .accesorios-descripcion2 .boton-shop {
   border-radius: 5px;
   margin-left: 12px;
 }
-main .contenedor_accesorios3 {
+@media screen and (max-width: 1020px) {
+  .contenedor_accesorios2 .accesorios-descripcion2 .boton-shop {
+    margin-bottom: 20px;
+    margin-right: 12px;
+    font-size: 12px;
+    padding: 3px 20px 3px 20px;
+  }
+}
+@media all and (min-width: 375px) and (max-width: 500px) {
+  .contenedor_accesorios2 .accesorios-descripcion2 .boton-shop {
+    margin-bottom: 20px;
+    margin-right: 12px;
+    font-size: 12px;
+    padding: 3px 10px 3px 10px;
+  }
+}
+@media all and (max-width: 480px) {
+  .contenedor_accesorios2 .accesorios-descripcion2 .boton-shop {
+    margin-bottom: 20px;
+    margin-right: 12px;
+    font-size: 9px;
+    padding: 2px 8px 2px 8px;
+  }
+}
+.contenedor_accesorios2 .accesorios-descripcion2 .boton-shop-lifestyle {
+  font-size: 15px;
+  color: black;
+  font-weight: 500;
+  padding: 8px 90px 8px 90px;
+  background-color: rgb(243, 241, 241);
+  border-radius: 5px;
+  margin-left: 12px;
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.contenedor_accesorios3 {
   position: relative;
   text-align: center;
   font-size: 35px;
   color: white;
   font-weight: 500;
 }
-main .contenedor_accesorios3 .accesorios-descripcion3 {
+.contenedor_accesorios3 .accesorios-descripcion3 {
   position: absolute;
   top: 72%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-main .contenedor_accesorios3 .accesorios-descripcion3 .boton-shop {
+@media all and (min-width: 375px) and (max-width: 500px) {
+  .contenedor_accesorios3 .accesorios-descripcion3 {
+    top: 50%;
+    margin-bottom: -20px;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .contenedor_accesorios3 .accesorios-descripcion3 {
+    top: 70%;
+    margin-bottom: -10px;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .contenedor_accesorios3 .accesorios-descripcion3 .accesorios-info3 {
+    font-size: 25px;
+  }
+}
+@media all and (min-width: 375px) and (max-width: 500px) {
+  .contenedor_accesorios3 .accesorios-descripcion3 .accesorios-info3 {
+    font-size: 15px;
+  }
+}
+@media all and (max-width: 480px) {
+  .contenedor_accesorios3 .accesorios-descripcion3 .accesorios-info3 {
+    margin-bottom: -20px;
+  }
+}
+.contenedor_accesorios3 .accesorios-descripcion3 .boton-shop {
   font-size: 15px;
   color: black;
   font-weight: 500;
@@ -916,4 +850,50 @@ main .contenedor_accesorios3 .accesorios-descripcion3 .boton-shop {
   background-color: rgb(243, 241, 241);
   border-radius: 5px;
   margin-left: 12px;
+}
+@media screen and (max-width: 1020px) {
+  .contenedor_accesorios3 .accesorios-descripcion3 .boton-shop {
+    margin-bottom: 20px;
+    margin-right: 12px;
+    font-size: 12px;
+    padding: 3px 20px 3px 20px;
+  }
+}
+@media all and (min-width: 375px) and (max-width: 500px) {
+  .contenedor_accesorios3 .accesorios-descripcion3 .boton-shop {
+    margin-bottom: 20px;
+    margin-right: 12px;
+    font-size: 12px;
+    padding: 3px 10px 3px 10px;
+  }
+}
+@media all and (max-width: 480px) {
+  .contenedor_accesorios3 .accesorios-descripcion3 .boton-shop {
+    margin-bottom: 20px;
+    margin-right: 12px;
+    font-size: 9px;
+    padding: 2px 8px 2px 8px;
+  }
+}
+
+.contenedor-instalacion video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+.contenedor-instalacion p.titulo-instalacion {
+  font-weight: bold;
+  margin-top: 1%;
+}
+.contenedor-instalacion p.parrafo-instalacion {
+  margin-bottom: 2%;
+}
+.contenedor-instalacion .descripcion-instalcion p {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10%;
+  margin-right: 10%;
 }/*# sourceMappingURL=estilo.css.map */

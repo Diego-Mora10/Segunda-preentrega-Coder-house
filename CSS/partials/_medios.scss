@@ -1,291 +1,36 @@
-@media (max-width:1020px) {
-    .grid-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 5px;
-    font-size: 20px;
-    font-weight: 500;
-  }
-}
-@media all and (max-width:1400px) {
-    div.botones{
-       margin-top: 480px;
-       display: block ;
-       flex-wrap: wrap;
-       
-   }
-   .order{
-       margin-bottom: 20px;
-       margin-left: 12px;
-       justify-content: center;
-   }
-   .demo{
-       margin-bottom: 20px;
-       margin-right: 12px;
-   }
-   .tax{
-       font-size: 13px;
-   }
-   
-    div.promo_shop{
-       margin-top: 350px;
-       display: block ;
-       flex-wrap: wrap;
-   }
-   
-   .demo{
-       margin-bottom: 20px;
-       margin-right: 12px;
-       padding:8px 80px 8px 80px;
-   }
-   .titulo_productos{
-       margin-top: 150px;
-       margin-bottom: 90px;
-   }
-
-   .info1_promo{
-       font-size: 25px;
-       
-   }
-   .info2_promo{
-       font-size: 15px;
-
-   }
-   .Productos{
-       margin-top: 80px;
-       margin-left: 30px;
-       font-size: 35px;
-       font-weight: 500;
-   }
-
-   
+@mixin pantallasanchas{
+    @media screen and (max-width:1400px) {
+        @content;
+    }
 }
 
-@media all and (max-width:1200px) {
-     div.botones{
-        margin-top: 480px;
-        display: block ;
-        flex-wrap: wrap;
-        
+@mixin pantallasmedianas{
+    @media screen and (max-width:1200px) {
+        @content;
     }
-    .order{
-        margin-bottom: 20px;
-        margin-left: 12px;
-        justify-content: center;
-    }
-    .demo{
-        margin-bottom: 20px;
-        margin-right: 12px;
-    }
-    .tax{
-        font-size: 13px;
-    }
-    
-     div.promo_shop{
-        margin-top: 200px;
-        display: block ;
-        flex-wrap: wrap;
-    }
-    
-    .demo{
-        margin-bottom: 20px;
-        margin-right: 12px;
-        padding:8px 80px 8px 80px;
-    }
-    .titulo_productos{
-        margin-top: 200px;
-        margin-bottom: 90px;
-    }
-
-    .info1_promo{
-        font-size: 25px;
-        
-    }
-    .info2_promo{
-        font-size: 15px;
-
-    }
-    .Productos{
-        margin-top: 80px;
-        margin-left: 30px;
-        font-size: 35px;
-        font-weight: 500;
-    }
-
-    
 }
 
-@media all and (min-width: 480px) and (max-width: 812px){
- 
-    div.botones{
-      margin-top: 420px;
-      display: block ;
-      flex-wrap: wrap;
-      
-  }
-  .order{
-      margin-bottom: 20px;
-      margin-left: 12px;
-      justify-content: center;
-      padding:8px 80px 8px 80px;
-  }
-  .demo{
-      margin-bottom: 20px;
-      margin-right: 12px;
-      padding:8px 80px 8px 80px;
-  }
-  .tax{
-      font-size: 13px;
-  }
-  
-    div.promo_shop{
-      margin-top: 80px;
-      display: block ;
-      flex-wrap: wrap;
-      font-size: 8px;
-  }
-  
-  .demo{
-      margin-bottom: 20px;
-      margin-right: 12px;
-      padding:8px 80px 8px 80px;
-  }
-  .info1_promo{
-      font-size: 20px;
-      
-  }
-  .info2_promo{
-      font-size: 15px;
-
-  }
-  .promo_shop{
-      margin-top: 10px;
-  }
-  p.accesorios-info1,.accesorios-info2,.accesorios-info3{
-      font-size: 25px;
-  }
-  .accesorios-descripcion1,.accesorios-descripcion2,.accesorios-descripcion3{
-       top: 70%; 
-  }
-  p.accesorios-info1,.accesorios-info2,.accesorios-info3{
-      margin-bottom: -10px;
-  }
-  a.boton-shop{
-      margin-bottom: 20px;
-      margin-right: 12px;
-      font-size: 12px;
-      padding:3px 20px 3px 20px;
-  }
-}
-@media all and (min-width:375px) and (max-width: 500px) {
-    div.promo_shop{
-        margin-top: 300px;
-        display: block ;
-        flex-wrap: wrap;
-    }
-    
-    .demo{
-        margin-bottom: 20px;
-        margin-right: 12px;
-        padding:8px 80px 8px 80px;
-    }
-    div.promo_shop{
-        margin-top: 30px;
-        display: block ;
-        flex-wrap: wrap;
-    }
-    .info1_promo{
-        font-size: 20px;
-        
-    }
-    .info2_promo{
-        font-size: 15px;
-
-    }
-    .titulo_productos{
-        margin-top: 80px;
-        margin-bottom: 90px;
-    }
-    .grid-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 5px;
-    font-size: 15px;
-    font-weight: 500;
-    }
-    p.accesorios-info1,.accesorios-info2,.accesorios-info3{
-        font-size: 15px;
-    }
-    .accesorios-descripcion1,.accesorios-descripcion2,.accesorios-descripcion3{
-        top: 50%;
-        
-    }
-    p.accesorios-info1,.accesorios-info2,.accesorios-info3{
-        margin-bottom: -20px;
+@mixin pantallasmedia{
+    @media screen and (max-width:1020px) {
+      @content;
+      }
     }
 
+ @mixin pantallaschicas{
+    @media all and (min-width: 480px) and (max-width: 812px){
+        @content;
+    }
+ }       
 
-    a.boton-shop{
-        margin-bottom: 20px;
-        margin-right: 12px;
-        font-size: 12px;
-        padding:3px 10px 3px 10px;
+ @mixin tablet{
+    @media all and (min-width:375px) and (max-width: 500px){
+        @content;
     }
+ }
 
-}
-@media all and (max-width:368px) {
-    div.promo_shop{
-        margin-top: 300px;
-        display: block ;
-        flex-wrap: wrap;
-    }
-    
-    .demo{
-        margin-bottom: 20px;
-        margin-right: 12px;
-        padding:8px 80px 8px 80px;
-    }
-    div.promo_shop{
-        margin-top: 30px;
-        display: block ;
-        flex-wrap: wrap;
-    }
-    .info1_promo{
-        font-size: 12px;
-        
-    }
-    .info2_promo{
-        font-size: 7px;
-
-    }
-    .titulo_productos{
-        margin-top: 80px;
-        margin-bottom: 90px;
-    }
-    .grid-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 5px;
-    font-size: 15px;
-    font-weight: 500;
-    }
-    p.accesorios-info1,.accesorios-info2,.accesorios-info3{
-        font-size: 15px;
-    }
-    .accesorios-descripcion1,.accesorios-descripcion2,.accesorios-descripcion3{
-        top: 50%;
-        
-    }
-    p.accesorios-info1,.accesorios-info2,.accesorios-info3{
-        margin-bottom: -20px;
+ @mixin movil{
+    @media all and (max-width:480px){
+        @content;
     }
 
-
-    a.boton-shop{
-        margin-bottom: 20px;
-        margin-right: 12px;
-        font-size: 9px;
-        padding:2px 8px 2px 8px;
-    }
-
-}
+ }

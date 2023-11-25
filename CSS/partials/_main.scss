@@ -1,5 +1,6 @@
-main{
+@import "../partials/medios";
 
+main{
         .content{
             margin-top: 4rem;
             color: white;
@@ -18,7 +19,34 @@ main{
         }
     
     .botones{
-        margin-top: 40rem;
+        margin-top: 30rem;
+        
+        @include pantallasanchas{
+            margin-top: 200px;
+            display: block ;
+            flex-wrap: wrap;
+        }
+        @include pantallasmedianas{
+            margin-top: 480px;
+            display: block ;
+            flex-wrap: wrap;
+        }
+        @include pantallaschicas{
+            margin-top: 420px;
+            display: block ;
+            flex-wrap: wrap;
+        }
+        @include tablet{
+            margin-top: 150px;
+            display: block ;
+            flex-wrap: wrap;
+        }
+        @include movil{
+            margin-top: 100px;
+            display: block ;
+            flex-wrap: wrap;           
+        }
+       
 
         .order{
             color: white;
@@ -29,6 +57,49 @@ main{
             border-radius: 5px;
             margin-right: 12px;
 
+            @include pantallasanchas{
+                margin-bottom: 20px;
+                margin-left: 12px;
+                display: block ;
+            flex-wrap: wrap;
+                justify-content: center;
+                
+            }
+            @include pantallasmedianas{
+                margin-bottom: 20px;
+                margin-left: 12px;
+                display: block ;
+            flex-wrap: wrap;
+                justify-content: center;
+
+            }
+            @include pantallaschicas{
+                margin-bottom: 20px;
+                margin-left: 12px;
+                justify-content: center;
+                display: block ;
+            flex-wrap: wrap;
+                padding:3px 20px 3px 20px;
+            }
+            @include tablet{
+                margin-bottom: 20px;
+                margin-right: 12px;
+                font-size: 12px;
+                display: block ;
+                flex-wrap: wrap;
+                padding:3px 10px 3px 10px;
+            }
+            @include movil{
+                margin-bottom: 20px;
+                margin-right: 12px;
+                font-size: 9px;
+                display: block ;
+                flex-wrap: wrap;
+                padding:2px 8px 2px 8px;
+                
+            }
+
+            
                
               
                 
@@ -42,6 +113,24 @@ main{
             background-color: rgb(243, 241, 241);
             border-radius: 5px;
             margin-left: 12px;
+            
+            @include pantallasanchas{
+                margin-bottom: 20px;
+                margin-right: 12px;
+                padding:8px 80px 8px 80px;
+                
+            }
+            @include pantallasmedianas{
+                margin-bottom: 20px;
+                margin-left: 12px;
+                justify-content: center;
+
+            }
+            @include tablet{
+                margin-bottom: 20px;
+                margin-right: 12px;
+                padding:8px 80px 8px 80px;
+            }
 
                 
                 
@@ -53,6 +142,58 @@ main{
           }
     }
 
+    section.interior{
+        position: relative;
+        background-color: black;
+        z-index: -2;
+    
+        div.imagen_interior {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            height: auto;
+            margin-top: 80px;
+
+                .imagen_interior img {
+                width: 100%;
+                height: auto;
+                margin-top: 20px;
+                }
+                h1{
+                    padding-top: 10px;
+                    color: white;
+                }
+                
+
+        }
+    }
+    
+    section.cinematic{
+        position: relative;
+        background-color: black;
+        z-index: -2;
+        
+        div.cinematica-descripcion{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                height: auto;
+                padding-top: 60px;
+                color: white;
+            video{
+               width: auto;  
+               object-fit: cover;
+               width: 50%;
+               height: auto;
+            }
+            p.description-cinematica{
+               width: 30%;
+            }
+        }
+        
+    }
 
     img{
         position: relative;
@@ -67,25 +208,77 @@ main{
     }
 
     .contenedor_promo{
-        margin-bottom: 102px;
-
-
-        .promo_shop{
-            margin-top: 650px;
     
+        .promo_shop{
+
+            @include pantallasanchas{
+                margin-top: 350px;
+                display: block ;
+                flex-wrap: wrap;
+            }
+            @include pantallasmedianas{
+                margin-top: 200px;
+                display: block ;
+                flex-wrap: wrap;
+            }
+            @include pantallaschicas{
+                margin-top: 5px;
+                display: block ;
+                flex-wrap: wrap;
+                font-size: 8px;
+            }
+            @include tablet{
+                margin-top: 50px;
+                display: block ;
+                flex-wrap: wrap;
+            }
+            @include movil{
+                margin-top: 20px;
+                display: block ;
+                flex-wrap: wrap;
+            }
+            
+        
+
+            margin-bottom: 8%;
             .info_promo{
                 font-size: 45px;
                 font-weight: 500;
             }
             .info1_promo{
-                margin-top: 600px;
+                margin-top: 28%;
+                @include pantallasanchas{
+                    font-size: 25px;
+                    margin-top: 200px;
+                }
+                @include pantallaschicas{
+                    margin-top: 80px;
+                    font-size: 20px;
+                }
+                @include tablet{
+                    font-size: 20px;
+                    
+                }
+                @include movil{
+                    font-size: 12px;
+                    margin-top: 20px;
+                }
+
                 
             }
 
             .info2_promo{
                 font-size: 30px;
-                margin-bottom: 30px;
-                    
+                margin-bottom: 2%;
+                @include pantallasanchas{
+                    font-size: 15px;
+                }
+                @include pantallaschicas{
+                    font-size: 15px;
+                }
+                @include movil{
+                    font-size: 12px;
+                }
             }
         }
     }
@@ -97,23 +290,85 @@ main{
             background-color: rgb(243, 241, 241);
             border-radius: 5px;
             margin-left: 12px;
+            @include pantallasmedia{
+                margin-bottom: 20px;
+                margin-right: 12px;
+                font-size: 12px;
+                padding:3px 20px 3px 20px;
+            }
+            @include movil{
+                margin-bottom: 20px;
+                margin-right: 12px;
+                font-size: 9px;
+                padding:2px 8px 2px 8px;
+
+            }
         }
     }
+    
 
     .contenedor_imagenes{
         .Productos{
-            margin-top: 150px;
+            margin-top: 80px;
             margin-left: 30px;
             font-size: 35px;
             font-weight: 500;
+            @include pantallasanchas{
+                margin-top: 80px;
+                margin-left: 30px;
+                font-size: 35px;
+                font-weight: 500;
+             }
+
 
             .titulo_productos{
                 margin-bottom: 80px;
-
-               
+                @include pantallasanchas{
+                    margin-top: 150px;
+                    margin-bottom: 90px;
+                 }
+                @include pantallasmedianas{
+                    margin-top: 200px;
+                    margin-bottom: 90px;
+                }
+                @include tablet{
+                    margin-top: 80px;
+                    margin-bottom: 90px;
+                }
+                @include movil{
+                    margin-top: 80px;
+                    margin-bottom: 90px;
+                }
 
                 
             }
+        }
+    }
+
+    .contenedor_imagenes_charging{
+        margin-left: 15%;
+        margin-right: 15%;
+        
+        .Productos{
+            margin-top: 15%;
+            font-size: 35px;
+            font-weight: 500;
+            @include pantallasanchas{
+                margin-top: 80px;
+                margin-left: 30px;
+                font-size: 35px;
+                font-weight: 500;
+             }
+
+
+            .titulo_productos{
+                margin-bottom: 80px; 
+                @include pantallasanchas{
+                    margin-top: 150px;
+                    margin-bottom: 90px;
+                 }
+            }
+            
         }
     }
 
@@ -125,6 +380,27 @@ main{
         font-weight: 500;
         width: 100%;
 
+        @include pantallasmedia{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 5px;
+            font-size: 20px;
+            font-weight: 500;
+        }
+        @include tablet{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 5px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+        @include movil{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 5px;
+            font-size: 15px;
+            font-weight: 500;
+        }
         
         
 
@@ -142,6 +418,30 @@ main{
             transform: scale(1.2);
           }
       }
+
+      .contenedor-panel{
+            display: flex;
+            justify-content: space-between;
+            .description-panel{
+                width: 30%;
+                margin: 8%;
+            }
+            
+        .video-panel{
+                width: 100%;
+                height: 100vh;
+                object-fit: cover;
+            }
+        }
+            video{
+                width: 100%;
+                height: 100vh;
+                margin-bottom: 1%;
+            }
+        .titulo-descripcion{
+            font-weight: bold;
+        }
+      }
       
     
     .contenedor_accesorios1{
@@ -156,6 +456,31 @@ main{
             top: 80%;
             left: 50%;
             transform: translate(-50%, -50%);
+                @include pantallasmedia{
+                    top: 70%;
+                    margin-bottom:-10px;
+                }
+                @include tablet{
+                    top: 50%;
+                }
+                @include movil{
+                    top: 50%;
+                }
+
+            .accesorios-info1{
+            @include pantallasmedia{
+                    font-size: 25px; 
+            }
+            @include tablet{
+                font-size: 15px;
+                margin-bottom: -20px;
+            }
+            @include movil{
+                margin-bottom: -20px;
+            }
+            
+        }
+            
 
             .boton-shop{
                 font-size: 15px;
@@ -165,6 +490,29 @@ main{
                 background-color: rgb(243, 241, 241);
                 border-radius: 5px;
                 margin-left: 12px;
+
+                @include pantallasmedia{
+                    margin-bottom: 20px;
+                    margin-right: 12px;
+                    font-size: 12px;
+                    padding:3px 20px 3px 20px;
+                }
+                @include tablet{
+                    margin-bottom: 20px;
+                    margin-right: 12px;
+                    font-size: 12px;
+                    padding:3px 10px 3px 10px;
+                }
+                @include movil{
+                    margin-bottom: 20px;
+                    margin-right: 12px;
+                    font-size: 9px;
+                    padding:2px 8px 2px 8px;
+                }
+
+                
+
+                
             }
         }
     }
@@ -180,6 +528,30 @@ main{
             top: 80%;
             left: 50%;
             transform: translate(-50%, -50%);
+            
+                   @include pantallasmedia{
+                    top: 70%;
+                    margin-bottom: -10px;
+                }
+                    @include tablet{
+                        top: 50%;
+                    }
+                    @include movil{
+                        top: 50%;
+                    }
+
+            .accesorios-info2{
+            @include pantallasmedia{
+                    font-size: 25px;
+                    margin-bottom: -20px;
+            }
+            @include tablet{
+                font-size: 15px;
+            }
+            @include movil{
+                margin-bottom: -20px;
+            }
+        }
 
             .boton-shop{
                 font-size: 15px;
@@ -189,6 +561,39 @@ main{
                 background-color: rgb(243, 241, 241);
                 border-radius: 5px;
                 margin-left: 12px;
+
+                @include pantallasmedia{
+                    margin-bottom: 20px;
+                    margin-right: 12px;
+                    font-size: 12px;
+                    padding:3px 20px 3px 20px;
+                }
+                @include tablet{
+                    margin-bottom: 20px;
+                    margin-right: 12px;
+                    font-size: 12px;
+                    padding:3px 10px 3px 10px;
+                }
+                @include movil{
+                    margin-bottom: 20px;
+                    margin-right: 12px;
+                    font-size: 9px;
+                    padding:2px 8px 2px 8px;
+                }
+            }
+            .boton-shop-lifestyle{
+
+                font-size: 15px;
+                color: black;
+                font-weight: 500;
+                padding:8px 90px 8px 90px;
+                background-color: rgb(243, 241, 241);
+                border-radius: 5px;
+                margin-left: 12px;
+                border-color: black;
+                border-width: 2px;
+                border-style: solid;
+
             }
             
         }
@@ -206,6 +611,29 @@ main{
             top: 72%;
             left: 50%;
             transform: translate(-50%, -50%);
+            @include tablet{
+                top: 50%;
+                margin-bottom: -20px;
+            }
+            
+                @include pantallasmedia{
+                  top: 70%;
+                  margin-bottom: -10px;
+             }
+
+
+
+            .accesorios-info3{
+            @include pantallasmedia{
+                    font-size: 25px;
+                }
+                @include tablet{
+                    font-size: 15px;
+                }
+                @include movil{
+                    margin-bottom: -20px;
+                }
+            }
 
             .boton-shop{
                 font-size: 15px;
@@ -215,11 +643,55 @@ main{
                 background-color: rgb(243, 241, 241);
                 border-radius: 5px;
                 margin-left: 12px;
+
+                @include pantallasmedia{
+                    margin-bottom: 20px;
+                    margin-right: 12px;
+                    font-size: 12px;
+                    padding:3px 20px 3px 20px;
+                }
+                @include tablet{
+                    margin-bottom: 20px;
+                    margin-right: 12px;
+                    font-size: 12px;
+                    padding:3px 10px 3px 10px;
+                }
+                @include movil{
+                    margin-bottom: 20px;
+                    margin-right: 12px;
+                    font-size: 9px;
+                    padding:2px 8px 2px 8px;
+                }
+
             }
             
         }
     }
-    
-}
+    .contenedor-instalacion{
+        video{
+            
+            object-fit: cover;
+            width: 100%;
+            height: auto;
+            
+        }
+        p.titulo-instalacion{
+            font-weight:bold;
+            margin-top: 1%;
+        }
+        p.parrafo-instalacion{
+            margin-bottom: 2%;
+        }
+        .descripcion-instalcion p{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+    }
 
-@import "./medios";
+    
+
+
